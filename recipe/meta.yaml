@@ -1,5 +1,5 @@
 {% set name = "dnabot" %}
-{% set version = "3.1.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/BASIC-DNA-ASSEMBLY/DNA-BOT/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 0c5d2603b277d09c0a091c714a37c5304f6a1377c2885e9d695f86966be393c0
+  sha256: 7d09785a027817834a7ebd9ddb513ddb3bb94e442e50dff636634f9008c3e6bd
 
 build:
   number: 0
@@ -16,31 +16,15 @@ build:
 
 requirements:
   host:
-    - python >3.6, <=3.9
+    - python >3.6
     - pip
   run:
-    - python >3.6, <=3.9
-    - aiohttp =3.7.4
-    - async-timeout =3.0.1
-    - attrs =19.3.0
-    - chardet =3.0.4
-    - idna
-    - importlib-metadata
-    - jsonschema
-    - more-itertools =7.2.0
-    - multidict
+    - python >3.6
     - numpy
     - pandas
-    - pyrsistent
-    - pyserial =3.4
-    - python-dateutil =2.8.0
-    - pytz =2019.3
-    - six
-    - urwid
-    - yarl
-    - zipp =0.6.0
     - pyyaml
     - xorg-libx11
+    - tabulate
 
 test:
   source_files:
