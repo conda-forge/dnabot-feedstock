@@ -1,5 +1,5 @@
 {% set name = "dnabot" %}
-{% set version = "4.0.0" %}
+{% set version = "4.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/BASIC-DNA-ASSEMBLY/DNA-BOT/archive/refs/tags/{{ version }}.tar.gz
-  sha256: e6794169b7bae895a459f5fee60759c8661e47fd9a77a8d4084a07a660ecffe9
+  sha256: 7d09785a027817834a7ebd9ddb513ddb3bb94e442e50dff636634f9008c3e6bd
 
 build:
   number: 0
